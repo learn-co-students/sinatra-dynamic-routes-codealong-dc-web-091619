@@ -1,15 +1,18 @@
-# A sample Gemfile
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem 'sinatra'
+# A sample Gemfile
+source 'https://rubygems.org'
+
 gem 'rake'
-gem 'thin'
-gem 'shotgun'
 gem 'require_all'
+gem 'rubocop'
+gem 'shotgun'
+gem 'sinatra'
+gem 'thin'
 
 group :test, :development do
-  gem 'rspec'
   gem 'capybara'
-  gem 'rack-test'
   gem 'pry'
+  gem 'rack-test'
+  gem 'rspec'
 end
